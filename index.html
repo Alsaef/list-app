@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{ 
+            background-color: rgb(157, 0, 255);
+        }
+        th{ 
+            background-color: aqua;
+        }
+        td{ 
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+  <h1>list</h1>
+  <table style="margin: auto;"><tr>
+    <td><h1 style="margin: auto; text-align: center;" id="week"></h1> </td>
+  </tr></table> <br>
+  
+  <table border="2px" style="width: 450px; height: 200px; margin: auto;" >
+    <tr>
+    <th>week</th>
+    <th>work</th>
+    <th>work</th>
+    </tr>
+    <tr>
+        <td>saturday</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>sunday</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>monday</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>tuesday</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>wednesday</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>thusday</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>friday</td>
+        <td></td>
+        <td></td>
+    </tr>
+  </table>
+  <script>
+    let day = 7;
+
+switch (new Date().getDay()) {
+    default:
+        day = 'not found';
+        break;
+    case 0:
+        day = 'sunday';
+        break;
+    case 1:
+        day = 'monday';
+        break;
+    case 2:
+        day = 'tuesday'
+        break;
+    case 3:
+        day = 'wednesday';
+        break;
+    case 4:
+        day = 'thuseday';
+        break;
+    case 5:
+        day = 'friday';
+        break;
+    case 6:
+        day = 'saturday';
+}
+console.log(day);
+document.getElementById("week").innerHTML = day;
+  </script>
+</body>
+</html>
